@@ -11,6 +11,15 @@ spring:
           search-paths:
             - cloud-config
       label: master
-    zookeeper:
-      connect-string: localhost:2181
+#    zookeeper:
+#      connect-string: localhost:2181
+    nacos:
+      discovery:
+        server-addr: localhost:8848
 
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

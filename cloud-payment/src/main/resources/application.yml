@@ -10,11 +10,16 @@ spring:
     username: root
     password: 123456
   cloud:
-    zookeeper:
-      connect-string: localhost:2181
-
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+#    zookeeper:
+#      connect-string: localhost:2181
 mybatis:
   mapperLocations: classpath:static/*.xml
   type-aliases-package: com.poplar.domain
-
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
