@@ -12,6 +12,11 @@
     <artifactId>cloud-config-server</artifactId>
 
     <dependencies>
+        <!--nacos-config-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-config-server -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
