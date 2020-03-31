@@ -1,0 +1,20 @@
+server:
+  port: 7001
+spring:
+  application:
+    name: cloud-payment
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/cloud2020?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+  cloud:
+    zookeeper:
+      connect-string: localhost:2181
+
+mybatis:
+  mapperLocations: classpath:static/*.xml
+  type-aliases-package: com.poplar.domain
+
+
